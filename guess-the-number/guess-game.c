@@ -11,20 +11,25 @@ int main()
     printf("Your trun to guess the number.\n");
 
     srand(time(NULL));
-    int secretNumber = rand() % 100;
-    char input[2];
+    int secretNumber = (rand() % 100) + 1;
     int guess;
     int attempts = 0;
 
     while (1)
     {
-        printf("Enter your guess: ");
-        scanf("%s", &input);
-        guess = atoi(input);
-        if (!isdigit(input[0]))
+        while (1)
         {
-            printf("Invalid input. Please enter a number between 1 and 100\n");
-            continue;
+            printf("Enter a number: ");
+
+            if (scanf("%d", &guess) != 1)
+            {
+                while (getchar() != '\n'); // Discard invalid characters
+                printf("Invalid input, please enter a valid number.\n");
+                continue;
+            }
+
+            printf("You entered: %d\n", guess);
+            break;
         }
         attempts++;
 
