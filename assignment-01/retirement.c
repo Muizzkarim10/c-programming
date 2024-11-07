@@ -10,6 +10,7 @@ int main(void)
     if (initial_balance <= 0)
     {
         printf("Initial balance can't be less than or equal to zero.\n");
+        return 1;
     }
 
     printf("Enter your monthly contribution amount: \n");
@@ -17,6 +18,7 @@ int main(void)
     if (contribution <= 0)
     {
         printf("Contribution can't be less than or equal to zero.\n");
+        return 1;
     }
 
     printf("Enter annual inflation rate (0 to 1): \n");
@@ -24,6 +26,7 @@ int main(void)
     if (inflation_rate <= 0 || inflation_rate > 1)
     {
         printf("Please enter a number between 0 and 1.\n");
+        return 1;
     }
 
     printf("Enter years until retirement: \n");
@@ -31,6 +34,7 @@ int main(void)
     if (years <= 0)
     {
         printf("Years until retirement can't be zero or negative.\n");
+        return 1;
     }
 
     printf("Enter annual return rate (0 to 1): \n");
@@ -38,6 +42,7 @@ int main(void)
     if (return_rate <= 0 || return_rate >= 1)
     {
         printf("Please enter a number between 0 and 1.\n");
+        return 1;
     }
 
     float monthly_return_rate = return_rate / 12;
