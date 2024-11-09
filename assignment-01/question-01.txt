@@ -1,0 +1,10 @@
+Syntax are the rules that define the structure and format of code, like spelling, punctuation, and the correct order of elements. It is the grammar of a programming language. Syntax error prevent the program from running, they can be solved easily.
+
+Semantics is the meaning or the logic behind the code. Error in the logic of code is hard to find because the program runs but gives wrong output.
+
+Examples:
+1. mean =  a + b / 2;
+
+2. if ( x = 4 ) {
+	printf("%d", x);
+}
