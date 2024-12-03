@@ -13,11 +13,13 @@ int main(int argc, char **argv)
     int *arr = generateRandomArray(n);
     printArray(arr, n);
 
-    int sum = getSum(arr, n);
-    printf("sum of elements = %d\n", sum);
-    printArray(arr, n);
+    // int sum = getSum(arr, n);
+    // printf("Sum of elements = %d\n", sum);
 
-    free(arr);
+    // double mean = getMean(arr, n);
+    // printf("Mean of elements = %.2f\n", mean);
+
+    
 
     return 0;
 }
