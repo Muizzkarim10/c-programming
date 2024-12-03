@@ -6,6 +6,9 @@
 
 #include "array_utils.h"
 
+#define max_size 100
+static int randomArr[max_size];
+
 void printArray(const int *arr, int n)
 {
   if (arr == NULL)
@@ -38,11 +41,11 @@ void printTable(int **table, int n, int m)
 
 int *generateRandomArray(int size)
 {
-  if (size < 0)
+  if (size < 0 || size > max_size)
   {
     return NULL;
   }
-  int randomArr[size];
+
   for (int i = 0; i < size; i++)
   {
     randomArr[i] = rand() % 100;
@@ -85,9 +88,10 @@ double getMean(const int *arr, int size)
   for (int i = 0; i < size; i++)
   {
     average += arr[i];
-    average = average / size;
-    return average;
   }
+
+  average = average / size;
+  return average;
 }
 
 int getMin(const int *arr, int size)
@@ -150,12 +154,21 @@ int getIndexOfMax(const int *arr, int size)
       max_index = i;
     }
   }
+
+  return max_index;
 }
 
 int *filterThreshold(const int *arr, int size, int threshold, int *resultSize)
 {
   // TODO: implement
-  
+  int count = 0;
+  for (int i = 0; i < size; i++)
+  {
+    if (arr[i] > threshold)
+    {
+      count++;
+    }
+  }
 }
 
 int **createMultiplicationTable(int n, int m)
