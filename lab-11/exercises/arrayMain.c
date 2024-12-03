@@ -19,7 +19,7 @@ int main(int argc, char **argv)
     printf("Index of the Minimum Number : %d\n", getIndexOfMin(arr, n));
     printf("Maximum Number in the array : %d\n", getMax(arr, n));
     printf("Index of Maximum Number : %d\n", getIndexOfMax(arr, n));
-    printf("");
+    printf(" ");
 
     return 0;
 }
