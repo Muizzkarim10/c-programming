@@ -63,7 +63,6 @@ int getSum(int *arr, int size)
   for (int i = 0; i < size; i++)
   {
     total += arr[i];
-    arr[i] = 0;
   }
   return total;
 }
@@ -83,7 +82,6 @@ void freeTable(int **table, int n)
 
 double getMean(const int *arr, int size)
 {
-  // TODO: implement
   int average = 0;
   for (int i = 0; i < size; i++)
   {
@@ -96,7 +94,6 @@ double getMean(const int *arr, int size)
 
 int getMin(const int *arr, int size)
 {
-  // TODO: implement
   int min = arr[0];
   for (int i = 0; i < size; i++)
   {
@@ -111,7 +108,6 @@ int getMin(const int *arr, int size)
 
 int getIndexOfMin(const int *arr, int size)
 {
-  // TODO: implement
   int min = arr[0];
   int min_index = 0;
   for (int i = 0; i < size; i++)
@@ -128,7 +124,6 @@ int getIndexOfMin(const int *arr, int size)
 
 int getMax(const int *arr, int size)
 {
-  // TODO: implement
   int max = arr[0];
   for (int i = 0; i < size; i++)
   {
@@ -143,7 +138,6 @@ int getMax(const int *arr, int size)
 
 int getIndexOfMax(const int *arr, int size)
 {
-  // TODO: implement
   int max = arr[0];
   int max_index = 0;
   for (int i = 0; i < size; i++)
@@ -160,7 +154,6 @@ int getIndexOfMax(const int *arr, int size)
 
 int *filterThreshold(const int *arr, int size, int threshold, int *resultSize)
 {
-  // TODO: implement
   int count = 0;
   for (int i = 0; i < size; i++)
   {
