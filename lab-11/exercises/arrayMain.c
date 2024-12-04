@@ -11,6 +11,7 @@ int main(int argc, char **argv)
 
     int n = 10;
     int *arr = generateRandomArray(n);
+    printf("Random Array : ");
     printArray(arr, n);
 
     printf("Sum of elements = %d\n", getSum(arr, n));
@@ -19,7 +20,13 @@ int main(int argc, char **argv)
     printf("Index of the Minimum Number : %d\n", getIndexOfMin(arr, n));
     printf("Maximum Number in the array : %d\n", getMax(arr, n));
     printf("Index of Maximum Number : %d\n", getIndexOfMax(arr, n));
-    printf(" ");
+
+    // filterThreshold Array
+    int resultSize;
+    int threshold = 50;
+    int *filteredArr = filterThreshold(arr, n, threshold, &resultSize);
+    printf("Filtered array (elements > %d): ", threshold);
+    printArray(filteredArr, resultSize);
 
     return 0;
 }
