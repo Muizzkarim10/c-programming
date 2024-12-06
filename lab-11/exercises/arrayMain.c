@@ -28,5 +28,14 @@ int main(int argc, char **argv)
     printf("Filtered array (elements > %d): ", threshold);
     printArray(filteredArr, resultSize);
 
+    // Multiplicaiton Table
+    int rows = 3;
+    int cols = 5;
+    int **multiplicationTable = createMultiplicationTable(rows, cols);
+    for (int i = 0; i < rows; i++)
+    {
+        printArray(multiplicationTable[i], cols);
+    }
+
     return 0;
 }
