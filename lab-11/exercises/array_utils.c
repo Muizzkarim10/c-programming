@@ -188,5 +188,11 @@ int **createMultiplicationTable(int n, int m)
     }
   }
 
-  return multiplicationTable;
+  static int *table[max_size];
+  for (int i = 0; i < n; i++)
+  {
+    table[i] = multiplicationTable[i];
+  }
+
+  return table;
 }
