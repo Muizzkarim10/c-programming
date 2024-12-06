@@ -8,6 +8,7 @@
 
 #define max_size 100
 static int randomArr[max_size];
+static int resultArr[max_size];
 
 void printArray(const int *arr, int n)
 {
@@ -162,6 +163,18 @@ int *filterThreshold(const int *arr, int size, int threshold, int *resultSize)
       count++;
     }
   }
+
+  int j = 0;
+  for (int i = 0; i < size; i++)
+  {
+    if (arr[i] > threshold)
+    {
+      resultArr[j++] = arr[i];
+    }
+  }
+
+  *resultSize = count;
+  return resultArr;
 }
 
 int **createMultiplicationTable(int n, int m)
