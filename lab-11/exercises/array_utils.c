@@ -179,5 +179,5 @@ int *filterThreshold(const int *arr, int size, int threshold, int *resultSize)
 
 int **createMultiplicationTable(int n, int m)
 {
-  // TODO: implement
+   
 }
