@@ -23,23 +23,26 @@ void printTable(int **table, int n, int m);
 int * generateRandomArray(int size);
 
 /**
- * Sums the elements in the given array.
+ * generates a array of random numbers
  */
 int getSum(int *arr, int size);
+
+/*
+ -sums up the array 
+ */
+void freeTable(int **table, int n);
 
 /**
  * Frees the given (n x m) table.  Only the first parameter
  * (n, number of rows) is necessary to free the table.
  */
-void freeTable(int **table, int n);
-
-/**
- * TODO: add your own documentation
- */
 double getMean(const int *arr, int size);
 
 /**
- * TODO: add your own documentation
+ * gets the mean of numbers in the array
+ * created a variable named average
+ * used a for loop to sum up the numbers in the array
+ * than divided the average with the array size.
  */
 int getMin(const int *arr, int size);
 
@@ -67,3 +70,9 @@ int * filterThreshold(const int *arr, int size, int threshold, int *resultSize);
  * TODO: add your own documentation
  */
 int **createMultiplicationTable(int n, int m);
+/*
+-first created a global array multiplicationTable that will store the multiplication table
+-than used a nested loop to populate the array
+-since the 
+
+*/
