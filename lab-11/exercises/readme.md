@@ -44,24 +44,3 @@ be able to utilize others.
 [ 1   2   3   4   5 ]
 [ 2   4   6   8  10 ]
 [ 3   6   9  12  15 ]
-```  
-
-## Handin/Grader Instructions
-
-* Hand in your completed source file, `array_utils.c` and
-  header file `array_utils.h` through the handin and verify
-  your program is correct by using the grader.
-* Even if you worked with a partner, you *both* need to
-  turn in all files.
-
-## Advanced Activity (Optional)
-
-Read more about the capabilities of [Valgrind](http://valgrind.org/),
-(a suggested [tutorial](http://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)Debugging.html#Valgrind)) and how to use it.  
-Think of other situations that this tool may have come in
-handy and try using it for the next bug that you encounter.  
-int **createMultiplicationTable(int n, int m) - creates and returns a new (n x m) 2-D array that contains the values in a multiplication table. For example, if n = 3, m = 5 then the result should look like:
-
-[ 1   2   3   4   5 ]
-[ 2   4   6   8  10 ]
-[ 3   6   9  12  15 ]
