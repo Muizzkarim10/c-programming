@@ -56,7 +56,6 @@ int getIndexOfMin(const int *arr, int size);
 /**
  * used the same logic as to find the min number 
  * just add another variable that save the index number of the currently saved number in the min. 
- * 
  */
 int getMax(const int *arr, int size);
 
@@ -79,6 +78,6 @@ int **createMultiplicationTable(int n, int m);
 /*
  * first created a global array multiplicationTable that will store the multiplication table
  * than used a nested loop to populate the array
- * since the 
+ * since the function return type is a pointer, created a array of pointers that points to the begining of the rows in the multiplicationTable
 
 */
