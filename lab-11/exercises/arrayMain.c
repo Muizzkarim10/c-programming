@@ -31,10 +31,10 @@ int main(int argc, char **argv)
     // Multiplicaiton Table
     int rows = 3;
     int cols = 5;
-    int **multiplicationTable = createMultiplicationTable(rows, cols);
+    int **table = createMultiplicationTable(rows, cols);
     for (int i = 0; i < rows; i++)
     {
-        printArray(multiplicationTable[i], cols);
+        printArray(table[i], cols);
     }
 
     return 0;
