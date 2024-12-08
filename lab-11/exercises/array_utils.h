@@ -47,32 +47,38 @@ double getMean(const int *arr, int size);
 int getMin(const int *arr, int size);
 
 /**
- * TODO: add your own documentation
+ * initilized a varaible named min and stored the value of first elenment if array in it
+ * used a for loop to check for a lower number
+ * if found a smaller number stored it in the min. 
  */
 int getIndexOfMin(const int *arr, int size);
 
 /**
- * TODO: add your own documentation
+ * used the same logic as to find the min number 
+ * just add another variable that save the index number of the currently saved number in the min. 
+ * 
  */
 int getMax(const int *arr, int size);
 
 /**
- * TODO: add your own documentation
+ * same as min
  */
 int getIndexOfMax(const int *arr, int size);
 
 /**
- * TODO: add your own documentation
+ * same as min
  */
 int * filterThreshold(const int *arr, int size, int threshold, int *resultSize);
 
 /**
- * TODO: add your own documentation
+ * used a for loop to check for numbers greater than threshold
+ * used a counter to keep track of the number count.
+ * decleared a global array named resultArr to store the numbers greater than threshold
  */
 int **createMultiplicationTable(int n, int m);
 /*
--first created a global array multiplicationTable that will store the multiplication table
--than used a nested loop to populate the array
--since the 
+ * first created a global array multiplicationTable that will store the multiplication table
+ * than used a nested loop to populate the array
+ * since the 
 
 */
