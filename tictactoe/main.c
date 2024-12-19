@@ -41,8 +41,8 @@ int checkFreeSpaces()
                 freeSpaces--;
             }
         }
-        return freeSpaces;
     }
+    return freeSpaces;
 }
 
 void playerMove()
