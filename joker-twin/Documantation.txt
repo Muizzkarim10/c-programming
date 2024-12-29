@@ -1,0 +1,32 @@
+-defined global variables and Initialized required global arrays and variables.
+-Initialized a character Array "letters" with the required letters.
+-Added function prototypes.
+
+Functions
+1. resetBoard()
+-fill the board with #
+
+2. printBoard()
+-used a for loop to print the board on terminal.
+
+3. shuffleLetters()
+-Randomly shuffles the letters Array everytime the code is run.
+-than the letters are filled in the cards Array.
+
+4. checkPairs()
+-checks if the revealed cards are pairs or not.
+-it takes rows, cols, turn as parameters
+-than saves the first coordinates in last_row, last_col
+-than after the it recieves the coordinates of second card it compares them to check if they are pair using a if else statnment.
+-after getting both coordinates first it checks if a revealed card is a joker or not, if it is a joker than it removes the joker and the other card pair from the game.
+-if not a joker than it continues to check if the cards are pairs or not.
+-the total pair variable keeps track of the pairs revealed.
+-the functions returns 1 if a pair is revealed so the player turn is remains same.
+
+5. endMatch()
+-when 17 pairs are revealed the program checks the final cards if any remain.
+-than the endMatch function announces the winner and prints the scores
+
+Validations
+1. isdigit and isupper checks the if the input coordinates are correct or not.
+2. if else conditions are used to check if the coordinates are inside the board and if the pairs are already revealed or not.
