@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
     }
     firstInput = atoi(argv[1]);
     secondInput = atoi(argv[2]);
-    printf("The result of addition is %d\n", firstInput + secondInput);
+    printf("The result of addition is %d.\n", firstInput + secondInput);
 
     return 0;
 }
