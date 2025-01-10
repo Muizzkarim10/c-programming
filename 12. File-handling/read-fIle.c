@@ -3,7 +3,7 @@
 
 int main()
 {
-    FILE *fp = fopen("test.html", "r");
+    FILE *fp = fopen("test.txt", "r");
     if (fp == NULL)
     {
         printf("Error: Counld not open the file!");
