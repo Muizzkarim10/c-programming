@@ -4,10 +4,17 @@
 #include <windows.h>
 
 void printBoard();
+void fillBoard();
 
 char seats[10][10];
 
 int main()
+{
+    fillBoard();
+    printBoard();
+}
+
+void fillBoard()
 {
     for (int i = 0; i < 10; i++)
     {
@@ -16,7 +23,6 @@ int main()
             seats[i][j] = 'o';
         }
     }
-    printBoard();
 }
 
 void printBoard()
