@@ -1,0 +1,4 @@
+Customer Name 	Reserved Seats
+Muizz karim     A1
+Muizz karim     A2
+Aryan ddd       A4
